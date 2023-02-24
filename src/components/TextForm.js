@@ -46,6 +46,11 @@ export default function TextForm(props) {
         props.showAlert("Text cleared!", "success : ")
 
     }
+    const handleCopyClick = () =>{
+        navigator.clipboard.writeText(text)
+        props.showAlert("Copy to clip board!", "success : ")
+
+    }
 
 
     return (
@@ -59,6 +64,7 @@ export default function TextForm(props) {
                 <button disabled={text.length === 0} className={`btn btn-outline-${props.changeMode.btnStyle} mx-1 my-2`} onClick={handleLowClick}>Change to lowercase</button>
                 <button disabled={text.length === 0} className={`btn btn-outline-${props.changeMode.btnStyle} mx-1 my-2`} onClick={handleCapitalizedClick}>Capitalized text</button>
                 <button disabled={text.length === 0} className={`btn btn-outline-${props.changeMode.btnStyle} mx-1 my-2`} onClick={removeExtraSpaces}>Remove Extra Spaces</button>
+                <button disabled={text.length === 0} className={`btn btn-outline-${props.changeMode.btnStyle} mx-1 my-2`} onClick={handleCopyClick}>Copy text</button>
                 <button disabled={text.length === 0} className={`btn btn-outline-${props.changeMode.btnStyle} mx-1 my-2`} onClick={handleClearClick}>Clear text</button>
             </div>
             <div className="container my-3 ">

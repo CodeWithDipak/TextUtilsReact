@@ -31,6 +31,11 @@ main a{
 
 /* Navbar css */
 
+.logoTextSize{
+  font-weight: bolder;
+  font-size: 38px;
+}
+
 .circle1 {
   background-color: #7f1111;
   border: 1px solid white;

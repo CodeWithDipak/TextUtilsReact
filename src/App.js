@@ -3,8 +3,6 @@ import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 import React, { useState } from 'react';
-// import About from './components/About';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
@@ -65,20 +63,9 @@ function App() {
 
   return (
     <>
-    {/* <BrowserRouter> */}
-
       <Navbar title="TextUtils" about="About us" onClick1={onClick1} onClick2={onClick2} onClick3={onClick3} onClick4={onClick4} onClick5={onClick5} changeMode={changeMode} />
-      <Alert alert={alert} />
+      <Alert alert={alert} changeMode={changeMode} />
       <TextForm showAlert={showAlert} changeMode={changeMode} />
-
-      {/* <About changeMode={changeMode} /> */}
-
-    {/* <Routes>
-      <Route path = "/" element = {<TextForm showAlert={showAlert} changeMode={changeMode} />} exact/>
-      <Route path = "/about" element = {<About changeMode={changeMode} />} exact />
-    </Routes>
-
-    </BrowserRouter> */}
     </>
   );
 }

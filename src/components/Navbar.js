@@ -6,17 +6,12 @@ export default function Navbar(props) {
 
   return (
     <>
-      <div className="container-fluid" id="border" style={props.changeMode}>
+    
+      <div className="container-fluid " id="border" style={props.changeMode}>
         <nav className="navbar navbar-expand-lg " >
           <div className="container-fluid" >
-            <a href="#" className="navbar-brand" style={props.changeMode} >{props.title}</a>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup" >
-              <div className="navbar-nav" >
-                <a href="#" className="nav-link active" style={props.changeMode} aria-current="page" >Home</a>
-              </div>
-            </div>
+            <a href="#" className="navbar-brand logoTextSize" style={props.changeMode} >{props.title}</a>
             <div className='flex'>
-              <b className='mx-2'>{`Click to change background ->`}</b>
               <div className="circle1" onClick={props.onClick1}></div>
               <div className="circle2" onClick={props.onClick2}></div>
               <div className="circle3" onClick={props.onClick3}></div>
@@ -26,6 +21,7 @@ export default function Navbar(props) {
           </div>
         </nav>
       </div>
+  
     </>
   )
 }

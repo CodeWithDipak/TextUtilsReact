@@ -63,7 +63,7 @@ function App() {
 
   return (
     <>
-      <Navbar title="TextUtils" about="About us" onClick1={onClick1} onClick2={onClick2} onClick3={onClick3} onClick4={onClick4} onClick5={onClick5} changeMode={changeMode} />
+      <Navbar title="TextUtils"  onClick1={onClick1} onClick2={onClick2} onClick3={onClick3} onClick4={onClick4} onClick5={onClick5} changeMode={changeMode} />
       <Alert alert={alert} changeMode={changeMode} />
       <TextForm showAlert={showAlert} changeMode={changeMode} />
     </>

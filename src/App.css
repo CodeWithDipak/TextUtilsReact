@@ -125,3 +125,9 @@ main a{
 .aboutPara{
   padding-top: 10px;
 }
+
+/* Alert css */
+
+.alertStyle{
+  height : 50px;
+}
